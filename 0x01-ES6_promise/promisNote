@@ -1,0 +1,9 @@
+The Promise object represents the eventual completion (or failure) of an asynchronous operation and its resulting value.
+
+Promises simplify deferred and asynchronous computations. what mean by asynchronous?
+
+Asynchronous, in the context of programming, refers to a style of execution where operations can occur independently of the main program flow. This means that while one operation is being executed, the program can continue to do other things rather than waiting for that operation to complete.
+
+In the context of JavaScript, which is commonly used in web development, asynchronous operations are frequently encountered. For example, when fetching data from a server, the program doesn't wait for the response to come back before moving on to the next line of code. Instead, it sends the request and continues executing. When the response is received, a callback function or a promise is typically used to handle the data.
+
+Asynchronous programming is particularly useful in situations where there are operations that take time to complete, such as network requests, file I/O, or database queries. By allowing the program to continue executing other tasks while waiting for these operations to complete, asynchronous programming can improve the overall responsiveness and efficiency of an application.
