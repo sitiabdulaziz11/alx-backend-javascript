@@ -3,19 +3,17 @@
  */
 
 export default class HolbertonCourse {
-  /** 
+  /**
    * Implementation of HolbertonCourse class.
    * @param {String} name - The name of the course.
-   * 
    * @param {Number} length - the length of course (in months).
-   * 
    * @param {String[]} students - The names of students in the course.
-   */ 
+   */
 
   constructor(name, length, students) {
     this.name = name;
     this.length = length;
-    this.s = students;
+    this.students = students;
   }
   // Getter for name
 
