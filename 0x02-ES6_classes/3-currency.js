@@ -15,7 +15,7 @@ export default class Currency {
   }
 
   get name() {
-    return this.name;
+    return this._name;
   }
 
   set name(nitem) {
