@@ -3,6 +3,8 @@
  */
 
 export default class HolbertonCourse {
+  // Implementation of HolbertonCourse class.
+  
   constructor(name, length, student) {
     this.name = name;
     this.length = length;
