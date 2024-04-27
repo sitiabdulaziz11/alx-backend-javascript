@@ -12,10 +12,10 @@ export default class HolbertonCourse {
    * @param {String[]} students - The names of students in the course.
    */ 
 
-  constructor(name, length, student) {
+  constructor(name, length, students) {
     this.name = name;
     this.length = length;
-    this.student = student;
+    this.s = students;
   }
   // Getter for name
 
@@ -46,20 +46,20 @@ export default class HolbertonCourse {
   }
   // getter for student
 
-  get student() {
-    return this._student;
+  get students() {
+    return this._students;
   }
 
   // setter for student
-  set student(item) {
+  set students(item) {
     if (!(item instanceof Array)) {
       throw new TypeError('Students must be an array of strings');
 
       // if (!Array.isArray(student)) throw new TypeError('students type must be an Array');
     }
-    if (!item.every((student) => typeof student === 'string')) {
+    if (!item.every((students) => typeof students === 'string')) {
       throw new TypeError('Students must be an array of strings');
     }
-    this._student = item;
+    this._students = item;
   }
 }
